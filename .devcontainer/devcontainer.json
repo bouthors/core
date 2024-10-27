@@ -7,6 +7,9 @@
   "containerEnv": {
     "PYTHONASYNCIODEBUG": "1"
   },
+  "mounts": [
+    "source=${localEnv:HOME}/Documents/vscode/hass-custom-test1/custom_components/hass-custom-test1,target=${containerWorkspaceFolder}/config/custom_components/hass-custom-test1,type=bind"
+  ],
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
